@@ -6,6 +6,15 @@ This project focuses on detecting driver drowsiness through a camera and soundin
 - Real-Time Alerts: Sounds a buzzer to wake the driver.
 - Emergency Messaging: Sends a message to a registered number if the driver is detected to be drowsy.
 - Facial Landmarks: Utilizes advanced facial landmarks detection for accurate monitoring.
+
+# Requirements
+- Please download this file "shape_predictor_68_face_landmarks" from internet to use the model.
+- Python 3.x
+- OpenCV
+- DLib from C Library
+- imutils
+- NumPy
+- Twilio (or any other messaging service for sending SMS)
   
 # How It Works
 The system uses a camera to capture the driver’s face and analyzes the eye aspect ratio (EAR) to determine if the driver is drowsy. OpenCV is used for image processing, and DLib is used for detecting facial landmarks. When drowsiness is detected, the system sounds a buzzer and sends an emergency message to a pre-registered phone number.
